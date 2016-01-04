@@ -1,0 +1,33 @@
+{
+  "private": true,
+  "devDependencies": {
+    "babel": "^6.1.18",
+    "babel-core": "^5.4.7",
+    "babel-loader": "^5.1.3",
+    "chai": "^3.4.1",
+    "mocha": "^2.3.4",
+    "webpack": "^1.9.10"
+  },
+  "dependencies": {
+    "pixi.js": "^3.0.8",
+    "randomcolor": "^0.4.0"
+  },
+  "scripts": {
+    "test": "mocha tests --compilers js:babel-core/register --recursive"
+  },
+  "jest": {
+    "scriptPreprocessor": "<rootDir>/node_modules/babel-jest",
+    "testFileExtensions": [
+      "es6",
+      "js"
+    ],
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "es6"
+    ],
+    "testPathDirs": [
+      "<rootDir>/tests/"
+    ]
+  }
+}
